@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using XCTBenchmark.Helpers;
 
 namespace XCTBenchmark.Droid
 {
@@ -19,7 +20,8 @@ namespace XCTBenchmark.Droid
 
             base.OnCreate(savedInstanceState);
 
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+			BaseBenchmark.Renderer = new NativeViewRenderer();
+			Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

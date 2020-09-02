@@ -11,7 +11,7 @@ namespace XCTBenchmark
 		{
 			InitializeComponent();
 
-			MainPage = new SimpleRunPage();
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart()

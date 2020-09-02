@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="NativeViewRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,6 +100,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\XamarinCommunityToolkit\Xamarin.CommunityToolkit.csproj">
+      <Project>{b0dcdf81-953d-47da-a7d4-0565339bf07c}</Project>
+      <Name>Xamarin.CommunityToolkit</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XCTBenchmark\XCTBenchmark.csproj">
       <Project>{17FB478E-8486-4489-A620-6D51527A9203}</Project>
       <Name>XCTBenchmark</Name>

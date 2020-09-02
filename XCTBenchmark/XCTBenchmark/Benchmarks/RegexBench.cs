@@ -3,21 +3,29 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using BenchmarkDotNet.Attributes;
+using XCTBenchmark.Helpers;
 
 namespace XCTBenchmark.Benchmarks
 {
 	[MemoryDiagnoser]
-	public class RegexBench
+	public class RegexBench : BaseBenchmark
 	{
-		public static string strToTest = "#xamarinForms!";
-		public static string pattern = @"[@]\w+";
+		public string strToTest = "#xamarinForms!";
+		public string pattern = @"[@]\w+";
 
-		public Regex regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.Singleline);
+		public Regex regex;
 
-		public Lazy<Regex> lazyRegex = new Lazy<Regex>(() => new Regex(pattern, RegexOptions.Compiled | RegexOptions.Singleline));
+		public Lazy<Regex> lazyRegex;
+
+		[GlobalSetup]
+		public void SetUp()
+		{
+			regex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.Singleline);
+			lazyRegex = new Lazy<Regex>(() => new Regex(pattern, RegexOptions.Compiled | RegexOptions.Singleline));
+		}
 
 		[Benchmark(Baseline = true)]
-		public static bool RegexStringTest() =>
+		public bool RegexStringTest() =>
 			Regex.IsMatch(strToTest, pattern, RegexOptions.Singleline);
 
 		[Benchmark]

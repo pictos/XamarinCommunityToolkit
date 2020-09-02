@@ -15,14 +15,18 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="BenchmarkDotNet" Version="0.12.1.1356" />
     <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.12.1.1356" />
+    <PackageReference Include="Xamarin.Forms.Mocks" Version="4.7.0.1" />
     <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="2.0.49" ExcludeAssets="build" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <ProjectReference Include="..\..\XamarinCommunityToolkit\Xamarin.CommunityToolkit.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Pages\RunnerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Pages\SimpleRunPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
