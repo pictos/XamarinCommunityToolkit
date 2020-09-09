@@ -19,6 +19,7 @@ namespace XCTBenchmark
 			BindingContext = new[]
 			{
 				typeof (RegexBench),
+				typeof (LoopsBench)
 			};
 		}
 
