@@ -18,8 +18,9 @@ namespace XCTBenchmark
 
 			BindingContext = new[]
 			{
-				typeof (RegexBench),
-				typeof (LoopsBench)
+				typeof(RegexBench),
+				typeof(LoopsBench),
+				typeof(DelegatesBench)
 			};
 		}
 
