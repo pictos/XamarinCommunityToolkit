@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\XamarinCommunityToolkit\Xamarin.CommunityToolkit.csproj" />
+    <ProjectReference Include="..\..\..\XamarinCommunityToolkit\Xamarin.CommunityToolkit.csproj" />
   </ItemGroup>
 
   <ItemGroup>
