@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Xamarin.CommunityToolkit.UI.Views
@@ -12,6 +13,18 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		public event EventHandler<bool> OnAvailable;
 
 		internal event EventHandler ShutterClicked;
+
+		internal static readonly BindablePropertyKey ShutterCommandPropertyKey =
+			BindableProperty.CreateReadOnly(nameof(ShutterCommand),
+				typeof(ICommand),
+				typeof(CameraView),
+				default,
+				BindingMode.OneWayToSource,
+				defaultValueCreator: ShutterCommandValueCreator);
+
+		public static readonly BindableProperty ShutterCommandProperty = ShutterCommandPropertyKey.BindableProperty;
+
+		public ICommand ShutterCommand => (ICommand)GetValue(ShutterCommandProperty);
 
 		public static readonly BindableProperty IsBusyProperty = BindableProperty.Create(nameof(IsBusy), typeof(bool), typeof(CameraView), false);
 
@@ -99,5 +112,11 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		internal void RaiseMediaCaptureFailed(string message) => MediaCaptureFailed?.Invoke(this, message);
 
 		public void Shutter() => ShutterClicked?.Invoke(this, EventArgs.Empty);
+
+		static object ShutterCommandValueCreator(BindableObject b)
+		{
+			var camera = (CameraView)b;
+			return new Command(camera.Shutter);
+		}
 	}
 }

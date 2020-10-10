@@ -70,6 +70,24 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show snackbar, toast etc.
+        /// </summary>
+        internal static string ActionsPageDescription {
+            get {
+                return ResourceManager.GetString("ActionsPageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actions.
+        /// </summary>
+        internal static string ActionsPageTitle {
+            get {
+                return ResourceManager.GetString("ActionsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This sample demonstrates how to use ViewTappedAnimationBehaviour applying it in different UI elements..
         /// </summary>
         internal static string AnimationBehaviorTitle {
@@ -84,6 +102,15 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         internal static string AnimatioShortDescription {
             get {
                 return ResourceManager.GetString("AnimatioShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This behavior assigns grid row and column based on the order a view is added to the grid..
+        /// </summary>
+        internal static string AutoGridLayoutBehaviorDescription {
+            get {
+                return ResourceManager.GetString("AutoGridLayoutBehaviorDescription", resourceCulture);
             }
         }
         
@@ -286,11 +313,29 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default Gravatar.
+        /// </summary>
+        internal static string DefaultGravatar {
+            get {
+                return ResourceManager.GetString("DefaultGravatar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to e.g..
         /// </summary>
         internal static string EG {
             get {
                 return ResourceManager.GetString("EG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         
@@ -309,6 +354,15 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         internal static string EmailValidationShortDescription {
             get {
                 return ResourceManager.GetString("EmailValidationShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable nested:.
+        /// </summary>
+        internal static string EnableNested {
+            get {
+                return ResourceManager.GetString("EnableNested", resourceCulture);
             }
         }
         
@@ -340,6 +394,24 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Xamarin.Forms Expander control provides an expandable container to host any content..
+        /// </summary>
+        internal static string ExpanderDescription {
+            get {
+                return ResourceManager.GetString("ExpanderDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expander.
+        /// </summary>
+        internal static string ExpanderTitle {
+            get {
+                return ResourceManager.GetString("ExpanderTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Extensions are used to supplement existing functionalities by making them easier to use..
         /// </summary>
         internal static string ExtensionsDescription {
@@ -358,6 +430,15 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Full Image Source.
+        /// </summary>
+        internal static string FullImageSource {
+            get {
+                return ResourceManager.GetString("FullImageSource", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Thank you XamarinCommunityToolkit contributors.
         /// </summary>
         internal static string GratitudeMessage {
@@ -367,11 +448,53 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The GravatarImageSource allows you to easily utilize a users Gravatar image from Gravatar.com using nothing but their email address..
+        /// </summary>
+        internal static string GravatarImageSourceDescription {
+            get {
+                return ResourceManager.GetString("GravatarImageSourceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GravatarImageSource.
+        /// </summary>
+        internal static string GravatarImageSourceTitle {
+            get {
+                return ResourceManager.GetString("GravatarImageSourceTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GravatarSize.
+        /// </summary>
+        internal static string GravatarSize {
+            get {
+                return ResourceManager.GetString("GravatarSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Id.
         /// </summary>
         internal static string Id {
             get {
                 return ResourceManager.GetString("Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Behavior that auto sets row and column assignments of child views by the order they are defined in the grid. RowSpan and ColumnSpan are honored during the auto-assignment of row and column.
+        ///
+        ///By default, if more cells in the grid are needed by the number of child views then are defined an output warning will be generated. If a row or column span exceeds the defined rows and columns output warnings will be generated.
+        ///
+        ///The user may at their choice decide to have output warnings treated as exceptions.
+        ///
+        ///If [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ImpliedOrderGridDescriptionLabel {
+            get {
+                return ResourceManager.GetString("ImpliedOrderGridDescriptionLabel", resourceCulture);
             }
         }
         
@@ -502,6 +625,24 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MediaElement is a view for playing video and audio..
+        /// </summary>
+        internal static string MediaElementDescription {
+            get {
+                return ResourceManager.GetString("MediaElementDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MediaElement.
+        /// </summary>
+        internal static string MediaElementTitle {
+            get {
+                return ResourceManager.GetString("MediaElementTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This sample demonstrates how to use the MultiBinding Converter with the NotEqualConverter and the TextCaseConverter. 
         ///
         ///It converts the entered text to Upper Case and checks that it is Not Equal to the string &apos;ANDREI&apos;..
@@ -545,6 +686,15 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         internal static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nested expander.
+        /// </summary>
+        internal static string NestedExpander {
+            get {
+                return ResourceManager.GetString("NestedExpander", resourceCulture);
             }
         }
         
@@ -648,6 +798,24 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show snackbar (no action button).
+        /// </summary>
+        internal static string ShowSnackbarNoActionButton {
+            get {
+                return ResourceManager.GetString("ShowSnackbarNoActionButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show snackbar with action button.
+        /// </summary>
+        internal static string ShowSnackbarWithActionButton {
+            get {
+                return ResourceManager.GetString("ShowSnackbarWithActionButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SideMenuView is a simple and flexible Right/Left menu control..
         /// </summary>
         internal static string SideMenuViewDescription {
@@ -662,6 +830,24 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         internal static string SideMenuViewTitle {
             get {
                 return ResourceManager.GetString("SideMenuViewTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snackbar is closed by timeout.
+        /// </summary>
+        internal static string SnackbarIsClosedByTimeout {
+            get {
+                return ResourceManager.GetString("SnackbarIsClosedByTimeout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snackbar is closed by user.
+        /// </summary>
+        internal static string SnackbarIsClosedByUser {
+            get {
+                return ResourceManager.GetString("SnackbarIsClosedByUser", resourceCulture);
             }
         }
         
@@ -909,6 +1095,15 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Minimum length threshold (number of characters).
+        /// </summary>
+        internal static string UserStoppedTypingBehaviorMinimumLengthThresholdOptionLabel {
+            get {
+                return ResourceManager.GetString("UserStoppedTypingBehaviorMinimumLengthThresholdOptionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Start searching....
         /// </summary>
         internal static string UserStoppedTypingBehaviorSearchBarPlaceholderText {
@@ -938,9 +1133,9 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
         /// <summary>
         ///   Looks up a localized string similar to User stopped typing time threshold (in ms).
         /// </summary>
-        internal static string UserStoppedTypingBehaviorThresholdOptionLabel {
+        internal static string UserStoppedTypingBehaviorTimeThresholdOptionLabel {
             get {
-                return ResourceManager.GetString("UserStoppedTypingBehaviorThresholdOptionLabel", resourceCulture);
+                return ResourceManager.GetString("UserStoppedTypingBehaviorTimeThresholdOptionLabel", resourceCulture);
             }
         }
         
@@ -989,27 +1184,12 @@ namespace Xamarin.CommunityToolkit.Sample.Resx {
             }
         }
         
-        internal static string ExpanderTitle {
+        /// <summary>
+        ///   Looks up a localized string similar to XAML Extension.
+        /// </summary>
+        internal static string XAMLExtension {
             get {
-                return ResourceManager.GetString("ExpanderTitle", resourceCulture);
-            }
-        }
-        
-        internal static string ExpanderDescription {
-            get {
-                return ResourceManager.GetString("ExpanderDescription", resourceCulture);
-            }
-        }
-        
-        internal static string NestedExpander {
-            get {
-                return ResourceManager.GetString("NestedExpander", resourceCulture);
-            }
-        }
-        
-        internal static string EnableNested {
-            get {
-                return ResourceManager.GetString("EnableNested", resourceCulture);
+                return ResourceManager.GetString("XAMLExtension", resourceCulture);
             }
         }
     }

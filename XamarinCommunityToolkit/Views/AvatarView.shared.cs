@@ -1,4 +1,4 @@
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using static System.Math;
 
 namespace Xamarin.CommunityToolkit.UI.Views
